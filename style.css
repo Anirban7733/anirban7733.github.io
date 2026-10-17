@@ -9,7 +9,7 @@
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #15171a;
     --fg: #e6e6e3;
     --muted: #9aa0a8;
@@ -17,6 +17,14 @@
     --rule: #2c3036;
     --card: #1e2125;
   }
+}
+:root[data-theme="dark"] {
+    --bg: #15171a;
+    --fg: #e6e6e3;
+    --muted: #9aa0a8;
+    --accent: #e0707f;
+    --rule: #2c3036;
+    --card: #1e2125;
 }
 
 * { box-sizing: border-box; }
@@ -136,3 +144,33 @@ nav a.current { color: var(--accent); }
 .research h2 { font-size: 2rem; margin-bottom: 1.2rem; }
 .research h2.wip-heading { margin-top: 2.5rem; }
 @media (max-width: 640px) { .research h2 { font-size: 1.6rem; } }
+
+/* Home page: more breathing room, block centred vertically in the window */
+.home main {
+  min-height: calc(100vh - 9rem);
+  display: flex; flex-direction: column; justify-content: center;
+}
+.home #about { padding: 2rem 0 3rem; }
+.home h1 { font-size: 2.8rem; margin-bottom: .4rem; }
+.home .about { grid-template-columns: 1fr 19rem; gap: 4rem; align-items: center; margin-top: 1.6rem; }
+.home .bio p { line-height: 1.75; margin: 0 0 1.25rem; }
+.home .links { margin-top: 1.8rem; gap: .4rem 1.5rem; }
+@media (max-width: 640px) {
+  .home main { min-height: 0; display: block; }
+  .home h1 { font-size: 2rem; }
+  .home .about { grid-template-columns: 1fr; gap: 1.4rem; }
+}
+
+/* Dark mode toggle */
+.theme-toggle {
+  background: none; border: 1px solid var(--rule); border-radius: 999px;
+  width: 2rem; height: 2rem; padding: 0; cursor: pointer; color: var(--muted);
+  display: inline-flex; align-items: center; justify-content: center; align-self: center;
+}
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+.theme-toggle svg { width: 1rem; height: 1rem; }
+.theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+.header-inner { align-items: center; }
+nav { align-items: center; }
