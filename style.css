@@ -32,7 +32,7 @@ body {
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-.wrap { max-width: 50rem; margin: 0 auto; padding: 0 1rem; }
+.wrap { max-width: 66rem; margin: 0 auto; padding: 0 1rem; }
 
 /* Header */
 .site-header {
@@ -53,13 +53,16 @@ nav a:hover { color: var(--accent); text-decoration: none; }
 /* Sections */
 section { padding: 2.5rem 0 1rem; border-bottom: 1px solid var(--rule); }
 section:last-of-type { border-bottom: none; }
-h1 { font-size: 2rem; font-weight: 600; margin: 0 0 .2rem; line-height: 1.2; }
+h1 { font-size: 2.4rem; font-weight: 600; margin: 0 0 .2rem; line-height: 1.2; }
 h2 { font-size: 1.4rem; font-weight: 600; margin: 0 0 1rem; }
 
 /* About */
-.about { display: grid; grid-template-columns: 11rem 1fr; gap: 2rem; align-items: start; }
+.about { display: grid; grid-template-columns: 1fr 16rem; gap: 2.5rem; align-items: start; margin-top: 1.2rem; }
+.about .bio p:first-child { margin-top: 0; }
 .photo img, .photo-placeholder {
-  width: 11rem; height: 11rem; border-radius: 50%; object-fit: cover; display: block;
+  width: 100%; aspect-ratio: 4 / 5; height: auto;
+  border-radius: 6px; object-fit: cover; display: block;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .18);
 }
 .photo-placeholder {
   background: var(--card); color: var(--muted);
@@ -95,7 +98,8 @@ h2 { font-size: 1.4rem; font-weight: 600; margin: 0 0 1rem; }
 @media (max-width: 640px) {
   body { font-size: 1rem; }
   .about { grid-template-columns: 1fr; gap: 1.2rem; }
-  .photo img, .photo-placeholder { width: 8rem; height: 8rem; }
+  .photo { order: -1; }
+  .photo img, .photo-placeholder { width: 12rem; }
   .photo-placeholder { font-size: 3rem; }
   h1 { font-size: 1.7rem; }
 }
