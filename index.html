@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- EDIT: full name -->
   <title>Anirban Nath</title>
-  <meta name="description" content="Personal academic website of Anirban Nath, Columbia University.">
+  <meta name="description" content="Personal website of Anirban Nath, Ph.D. student in Statistics at Columbia University.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,8 +14,9 @@
     <a class="brand" href="#about">Anirban Nath</a>
     <nav>
       <a href="#about">About</a>
-      <a href="#publications">Publications</a>
-      <a href="#teaching">Teaching</a>
+      <a href="#publications">Research</a>
+      <a href="#awards">Awards</a>
+      <a href="#service">Service</a>
       <a href="files/cv.pdf">CV</a>
     </nav>
   </div>
@@ -27,34 +27,37 @@
   <!-- ============ ABOUT ============ -->
   <section id="about" class="about">
     <div class="photo">
-      <!-- EDIT: put your photo at images/profile.jpg, then replace the div below with:
-           <img src="images/profile.jpg" alt="Photo of Anirban Nath"> -->
-      <div class="photo-placeholder" aria-hidden="true">S</div>
+      <img src="images/profile.jpg" alt="Photo of Anirban Nath">
     </div>
 
     <div class="bio">
       <h1>Anirban Nath</h1>
-      <!-- EDIT: position and department -->
-      <p class="role">PhD. Student<br>Columbia University</p>
+      <p class="role">Ph.D. Student, Department of Statistics<br>Columbia University</p>
 
-      <!-- EDIT: bio paragraph -->
-      <p>[One or two paragraphs about your background and research.]</p>
+      <!-- EDIT: draft bio written from the CV; rewrite freely -->
+      <p>I am a Ph.D. student in Statistics at Columbia University. Before coming to Columbia, I received my
+        Bachelor of Statistics and Master of Statistics from the Indian Statistical Institute, Kolkata.</p>
+      <p>My research focuses on uncertainty quantification and distribution-free inference, in particular
+        conformal prediction for clustering, together with high-dimensional statistical inference and causal
+        inference. In Summer 2026 I was a Data Science Intern at Capital One, working on causal inference
+        methods for estimating heterogeneous treatment effects.</p>
 
       <p>My research interests include:</p>
       <ul class="interests">
-        <li>Random matrix theory</li>
-        <li>Random graph theory</li>
-        <li>High-dimensional statistics and probability</li>
-        <li>Inference for large networks</li>
+        <li>Uncertainty quantification</li>
+        <li>Conformal prediction and distribution-free inference</li>
+        <li>High-dimensional statistical inference</li>
+        <li>Unsupervised learning and clustering</li>
+        <li>Causal inference</li>
       </ul>
 
-      <!-- EDIT: links; delete any you don't want -->
       <p class="links">
-        <a href="mailto:somaklaha@fas.Columbia.edu">Email</a>
+        <a href="mailto:an3145@columbia.edu">Email</a>
         <a href="files/cv.pdf">CV</a>
-        <a href="[Google Scholar URL]">Google Scholar</a>
-        <a href="[arXiv author URL]">arXiv</a>
-        <a href="https://github.com/[username]">GitHub</a>
+        <a href="https://www.linkedin.com/in/anirban7733">LinkedIn</a>
+        <a href="https://github.com/Anirban7733">GitHub</a>
+        <!-- EDIT: add when available
+        <a href="[Google Scholar URL]">Google Scholar</a> -->
       </p>
     </div>
   </section>
@@ -62,52 +65,94 @@
   <!-- ============ PUBLICATIONS ============ -->
   <section id="publications">
     <h2>Publications and preprints</h2>
-    <p class="note">* denotes alphabetical / equal-contribution authorship. <!-- EDIT or delete --></p>
 
-    <!-- EDIT: one <li> per paper. Copy the block to add more. -->
+    <!-- One <li> per paper. Copy a block to add more. -->
     <ol class="pubs" reversed>
       <li>
-        <span class="pub-title">[Paper title]</span><br>
-        <span class="pub-authors">[Author A], <strong>Anirban Nath</strong>, [Author B]</span><br>
-        <span class="pub-venue">[Journal / Conference], [Year]</span>
+        <span class="pub-title">Weighted Conformal Clustering</span><br>
+        <span class="pub-authors">With Y. Hur and G. Allen</span><br>
+        <span class="pub-venue">NeurIPS 2026</span>
         <span class="pub-links">
-          <a href="[arXiv URL]">arXiv</a>
-          <a href="[PDF URL]">pdf</a>
-          <a href="[code URL]">code</a>
+          <a href="https://arxiv.org/abs/2606.00436">arXiv</a>
         </span>
       </li>
       <li>
-        <span class="pub-title">[Paper title]</span><br>
-        <span class="pub-authors"><strong>Anirban Nath</strong>, [Author B]</span><br>
-        <span class="pub-venue">Preprint, [Year]</span>
+        <span class="pub-title">Inference for Clustering: Conformal Sets for Cluster Labels</span><br>
+        <span class="pub-authors">With Y. Hur and G. Allen</span><br>
+        <span class="pub-venue">Submitted to the Journal of the American Statistical Association</span>
         <span class="pub-links">
-          <a href="[arXiv URL]">arXiv</a>
+          <a href="https://arxiv.org/abs/2604.03488">arXiv</a>
         </span>
+      </li>
+      <li>
+        <span class="pub-title">Linear Regression Beyond Covariance: Latent Slope Spectra from Higher-Order Cumulants</span><br>
+        <span class="pub-authors">With M. Yuan</span><br>
+        <span class="pub-venue">Submitted to Biometrika</span>
+      </li>
+      <li>
+        <span class="pub-title">Concentration of Adjacency and Laplacian Matrices for Lazy Network-Valued Stochastic Processes</span><br>
+        <span class="pub-authors">With S. Chatterjee et al.</span><br>
+        <span class="pub-venue">Preprint</span>
+        <span class="pub-links">
+          <a href="https://arxiv.org/abs/2208.01365">arXiv</a>
+        </span>
+      </li>
+      <li>
+        <span class="pub-title">Differential Fault Analysis of NORX Using Variants of the Coupon Collector Problem</span><br>
+        <span class="pub-authors">With A. Jana et al.</span><br>
+        <span class="pub-venue">Journal of Cryptographic Engineering, Springer</span>
       </li>
     </ol>
-  </section>
 
-  <!-- ============ TEACHING ============ -->
-  <section id="teaching">
-    <h2>Teaching</h2>
-    <!-- EDIT: one <li> per course -->
-    <ul class="teaching">
+    <h3>Work in progress</h3>
+    <ul class="wip">
       <li>
-        <span class="course">Stat 211: [Course title]</span>
-        <span class="term">Teaching Fellow, Columbia University, [Term Year]</span>
+        <span class="pub-title">Inference for Portfolio Optimization in High Dimensions</span>. With M. Yuan.<br>
+        <span class="pub-desc">Asymptotic distribution of the Sharpe ratio in high dimensions, under both the short-sales and no-short-sales regimes.</span>
       </li>
       <li>
-        <span class="course">[Course]</span>
-        <span class="term">[Role], [Institution], [Term Year]</span>
+        <span class="pub-title">Inference for Linear Causal Models with Hidden Confounding</span>. With M. Yuan.<br>
+        <span class="pub-desc">Tests for hidden confounders and causal effect estimation under identifiability conditions.</span>
+      </li>
+      <li>
+        <span class="pub-title">A Bayesian Predictive Modeling Framework for Bivariate Count Data and Application in Forecasting Soccer Matches</span>. With S. Deb.<br>
+        <span class="pub-desc">A time-varying autoregressive model for bivariate time series with covariates, applied to predicting soccer match outcomes.</span>
+      </li>
+      <li>
+        <span class="pub-title">Modeling Tips of Yellow Cab Drivers in New York City</span>. With S. Laha and S. Ghosh.<br>
+        <span class="pub-desc">Semi-continuous regression with variable selection to identify predictive features.</span>
       </li>
     </ul>
+  </section>
+
+  <!-- ============ AWARDS ============ -->
+  <section id="awards">
+    <h2>Awards and honors</h2>
+    <ul class="plain">
+      <li>Stonehage-Fleming Prize for the 3rd highest score in India in the Simon Marais Mathematics Competition.</li>
+      <li>Merit scholarships for academic excellence in four consecutive years at the Indian Statistical Institute, Kolkata.</li>
+      <li>Selected among the top 25 students from India in the Madhava Mathematics Competition.</li>
+      <li>Ranked 8th among 20,000 candidates in the ISI Entrance Examination.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SERVICE ============ -->
+  <section id="service">
+    <h2>Leadership and service</h2>
+    <ul class="plain">
+      <li>Student representative, Department of Statistics, Columbia University, 2025.</li>
+      <li>Mentor for the Inference qualifying examination, 2024 and 2025.</li>
+      <li>Mentor for the Core Competency examination, 2024.</li>
+      <li>Student seminar organizer, 2023&ndash;2024.</li>
+    </ul>
+    <!-- EDIT: add a Teaching section here if you have TA/teaching roles -->
   </section>
 
   <!-- ============ CV ============ -->
   <section id="cv">
     <h2>CV</h2>
-    <!-- EDIT: put your CV at files/cv.pdf -->
-    <p>My CV is available <a href="files/cv.pdf">here (PDF)</a>. Last updated [Month Year].</p>
+    <p>My CV is available <a href="files/cv.pdf">here (PDF)</a>.</p>
+    <p class="note">Outside research: contract bridge (USBF Junior), playing-card collecting, card magic, and table tennis.</p>
   </section>
 
 </main>
