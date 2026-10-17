@@ -42,7 +42,7 @@ a:hover { text-decoration: underline; }
 }
 .header-inner {
   display: flex; flex-wrap: wrap; align-items: baseline;
-  justify-content: space-between; gap: .25rem 1rem;
+  justify-content: flex-end; gap: .25rem 1rem;
   padding-top: .8rem; padding-bottom: .8rem;
 }
 .brand { font-weight: 600; color: var(--fg); font-size: 1.1rem; }
