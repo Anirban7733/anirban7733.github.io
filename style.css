@@ -152,7 +152,8 @@ nav a.current { color: var(--accent); }
 }
 .home #about { padding: 2rem 0 3rem; }
 .home h1 { font-size: 2.8rem; margin-bottom: .4rem; }
-.home .about { grid-template-columns: 1fr 19rem; gap: 4rem; align-items: center; margin-top: 1.6rem; }
+.home .about { grid-template-columns: 1fr 14rem; gap: 4rem; align-items: start; margin-top: 1.6rem; }
+.home .photo { padding-top: .35rem; }
 .home .bio p { line-height: 1.75; margin: 0 0 1.25rem; }
 .home .links { margin-top: 1.8rem; gap: .4rem 1.5rem; }
 @media (max-width: 640px) {
