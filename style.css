@@ -152,17 +152,21 @@ nav a.current { color: var(--accent); }
 }
 .home #about { padding: 2rem 0 3rem; }
 .home h1 { font-size: 2.8rem; margin-bottom: .4rem; }
-.home .about { grid-template-columns: 1fr 19rem; gap: 4rem; align-items: center; margin-top: 1.6rem; }
-.home .photo { display: flex; justify-content: center; }
-.home .photo img { width: 14rem; }
+.home .about { grid-template-columns: 1fr 19rem; gap: 4rem; align-items: stretch; margin-top: 1.6rem; }
+.home .bio > :last-child { margin-bottom: 0; }
+/* photo spans exactly from the top of the bio to its last line */
+.home .photo { position: relative; }
+.home .photo img {
+  position: absolute; top: 0; right: 0;
+  height: 100%; width: auto; max-width: 100%; object-fit: cover;
+}
 .home .bio p { line-height: 1.75; margin: 0 0 1.25rem; }
 .home .links { margin-top: 1.8rem; gap: .4rem 1.5rem; }
 @media (max-width: 640px) {
   .home main { min-height: 0; display: block; }
   .home h1 { font-size: 2rem; }
   .home .about { grid-template-columns: 1fr; gap: 1.4rem; }
-  .home .photo { justify-content: flex-start; }
-  .home .photo img { width: 12rem; }
+  .home .photo img { position: static; width: 12rem; height: auto; }
 }
 
 /* Dark mode toggle */
