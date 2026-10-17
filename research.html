@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Anirban Nath</title>
+  <meta name="description" content="Publications, preprints and work in progress of Anirban Nath.">
+  <link rel="stylesheet" href="style.css?v=7">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html" class="current">Research</a>
+      <a href="cv.html">CV</a>
+      <a href="interests.html">Other interests</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <section id="publications">
+    <h1>Research</h1>
+    <h2>Publications and preprints</h2>
+
+    <!-- One <li> per paper. Copy a block to add more. -->
+    <ol class="pubs" reversed>
+      <li>
+        <span class="pub-title">Weighted Conformal Clustering</span><br>
+        <span class="pub-authors">With Y. Hur and G. Allen</span><br>
+        <span class="pub-venue">NeurIPS 2026</span>
+        <span class="pub-links">
+          <a href="https://arxiv.org/abs/2606.00436">arXiv</a>
+          <button type="button" class="pub-toggle" aria-expanded="false" aria-controls="sum1">summary</button>
+        </span>
+        <p class="pub-summary" id="sum1" hidden>Extending our earlier conformal clustering method (below), this paper corrects for the
+          mismatch between estimated and true, unseen cluster labels by reweighting the data. It works on top of any
+          clustering algorithm and gives smaller, more informative sets of likely clusters, especially for complex,
+          high-dimensional data.</p>
+      </li>
+      <li>
+        <span class="pub-title">Inference for Clustering: Conformal Sets for Cluster Labels</span><br>
+        <span class="pub-authors">With Y. Hur and G. Allen</span><br>
+        <span class="pub-venue">Submitted to the Journal of the American Statistical Association</span>
+        <span class="pub-links">
+          <a href="https://arxiv.org/abs/2604.03488">arXiv</a>
+          <button type="button" class="pub-toggle" aria-expanded="false" aria-controls="sum2">summary</button>
+        </span>
+        <p class="pub-summary" id="sum2" hidden>When data are divided into clusters, we rarely know how much to trust each assignment.
+          This paper gives a method that returns a set of likely clusters for each data point, guaranteed to contain
+          the right one with a chosen probability, and applies it to identifying cell types from single-cell gene
+          data.</p>
+      </li>
+      <li>
+        <span class="pub-title">Linear Regression Beyond Covariance: Latent Slope Spectra from Higher-Order Cumulants</span><br>
+        <span class="pub-authors">With M. Yuan</span><br>
+        <span class="pub-venue">Submitted to Biometrika</span>
+        <span class="pub-links">
+          <a href="https://arxiv.org/abs/2610.17772">arXiv</a>
+          <button type="button" class="pub-toggle" aria-expanded="false" aria-controls="sum3">summary</button>
+        </span>
+        <p class="pub-summary" id="sum3" hidden>Standard regression uses the data only up to its covariance, which can miss distinct hidden
+          effects in how the data were generated. This paper shows that higher-order cross-moments, beyond the
+          covariance, carry this extra information, and develops methods to detect, and sometimes separate, these
+          distinct effects.</p>
+      </li>
+      <li>
+        <span class="pub-title">Concentration of Adjacency and Laplacian Matrices for Lazy Network-Valued Stochastic Processes</span><br>
+        <span class="pub-authors">With S. Chatterjee et al.</span><br>
+        <span class="pub-venue">Preprint</span>
+        <span class="pub-links">
+          <a href="https://arxiv.org/abs/2208.01365">arXiv</a>
+          <button type="button" class="pub-toggle" aria-expanded="false" aria-controls="sum4">summary</button>
+        </span>
+        <p class="pub-summary" id="sum4" hidden>Real networks change over time, with individual connections switching on and off at
+          their own pace rather than all at once. This paper shows that, even so, the network's overall structure
+          over time is reliably close to what we would expect, which justifies standard methods for finding
+          communities in the network and for detecting when its structure changes.</p>
+      </li>
+      <li>
+        <span class="pub-title">Differential Fault Analysis of NORX Using Variants of the Coupon Collector Problem</span><br>
+        <span class="pub-authors">With A. Jana et al.</span><br>
+        <span class="pub-venue">Journal of Cryptographic Engineering, 2022</span>
+        <span class="pub-links">
+          <a href="https://doi.org/10.1007/s13389-022-00285-y">journal</a>
+          <button type="button" class="pub-toggle" aria-expanded="false" aria-controls="sum5">summary</button>
+        </span>
+        <p class="pub-summary" id="sum5" hidden>NORX is an encryption scheme that was thought to resist attacks based on deliberately
+          causing hardware errors. This paper gives the first such attack on it, showing that carefully induced
+          errors can reveal the secret key, and uses a new variant of the classic "coupon collector" probability
+          problem to count how many errors are needed.</p>
+      </li>
+    </ol>
+
+    <h3>Work in progress</h3>
+    <ul class="wip">
+      <li>
+        <span class="pub-title">Inference for Portfolio Optimization in High Dimensions</span>. With M. Yuan.<br>
+        <span class="pub-desc">Asymptotic distribution of the Sharpe ratio in high dimensions, under both the short-sales and no-short-sales regimes.</span>
+      </li>
+      <li>
+        <span class="pub-title">A Bayesian Predictive Modeling Framework for Bivariate Count Data and Application in Forecasting Soccer Matches</span>. With S. Deb.<br>
+        <span class="pub-desc">A time-varying autoregressive model for bivariate time series with covariates, applied to predicting soccer match outcomes.</span>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year">2026</span> Anirban Nath</p>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+  document.querySelectorAll('.pub-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var box = document.getElementById(btn.getAttribute('aria-controls'));
+      var open = box.hidden;
+      box.hidden = !open;
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  });
+</script>
+</body>
+</html>
