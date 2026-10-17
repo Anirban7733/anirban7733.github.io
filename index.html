@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anirban Nath</title>
   <meta name="description" content="Personal website of Anirban Nath, Ph.D. student in Statistics at Columbia University.">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
@@ -36,9 +36,9 @@
         My research focuses on distribution-free inference and uncertainty quantification for reliable
         unsupervised learning, together with high-dimensional inference.</p>
 
-      <p>Before coming to Columbia, I received my Bachelor of Statistics and Master of Statistics from the
-        Indian Statistical Institute, Kolkata. In Summer 2026 I was a Data Science Intern at Capital One,
-        working on causal inference methods for estimating heterogeneous treatment effects.</p>
+      <p>In Summer 2026 I was a Data Science Intern at Capital One, working on causal inference methods for
+        estimating heterogeneous treatment effects. Before coming to Columbia, I received my Bachelor of
+        Statistics and Master of Statistics from the Indian Statistical Institute, Kolkata.</p>
 
       <p>If you are interested in my research, feel free to reach out at an3145 at columbia.edu.</p>
 
@@ -71,6 +71,10 @@
         <span class="pub-links">
           <a href="https://arxiv.org/abs/2606.00436">arXiv</a>
         </span>
+        <p class="pub-summary">Clustering sorts data into groups but usually says nothing about how certain each
+          assignment is. This paper produces, for each data point, a short list of groups it plausibly belongs to,
+          with a guarantee, and corrects for the fact that the group labels are themselves estimated, which keeps
+          these lists small even for complex, high-dimensional data.</p>
       </li>
       <li>
         <span class="pub-title">Inference for Clustering: Conformal Sets for Cluster Labels</span><br>
@@ -79,11 +83,22 @@
         <span class="pub-links">
           <a href="https://arxiv.org/abs/2604.03488">arXiv</a>
         </span>
+        <p class="pub-summary">When data are divided into clusters, we rarely know how much to trust each assignment.
+          This paper gives a method that returns a set of likely clusters for each data point, guaranteed to contain
+          the right one with a chosen probability, and applies it to identifying cell types from single-cell gene
+          data.</p>
       </li>
       <li>
         <span class="pub-title">Linear Regression Beyond Covariance: Latent Slope Spectra from Higher-Order Cumulants</span><br>
         <span class="pub-authors">With M. Yuan</span><br>
         <span class="pub-venue">Submitted to Biometrika</span>
+        <span class="pub-links">
+          <a href="https://arxiv.org/abs/2610.17772">arXiv</a>
+        </span>
+        <p class="pub-summary">Standard regression reports one average effect of a variable, which can hide that
+          different hidden parts of that variable act in different ways. This paper shows how patterns in the data
+          beyond averages and correlations can reveal, and sometimes separate, these distinct effects, and spells out
+          what can and cannot be concluded from observational data alone.</p>
       </li>
       <li>
         <span class="pub-title">Concentration of Adjacency and Laplacian Matrices for Lazy Network-Valued Stochastic Processes</span><br>
@@ -92,11 +107,22 @@
         <span class="pub-links">
           <a href="https://arxiv.org/abs/2208.01365">arXiv</a>
         </span>
+        <p class="pub-summary">Real networks change over time, with individual connections switching on and off at
+          their own pace rather than all at once. This paper shows that, even so, the network's overall structure
+          over time is reliably close to what we would expect, which justifies standard methods for finding
+          communities in the network and for detecting when its structure changes.</p>
       </li>
       <li>
         <span class="pub-title">Differential Fault Analysis of NORX Using Variants of the Coupon Collector Problem</span><br>
         <span class="pub-authors">With A. Jana et al.</span><br>
-        <span class="pub-venue">Journal of Cryptographic Engineering, Springer</span>
+        <span class="pub-venue">Journal of Cryptographic Engineering, 2022</span>
+        <span class="pub-links">
+          <a href="https://doi.org/10.1007/s13389-022-00285-y">journal</a>
+        </span>
+        <p class="pub-summary">NORX is an encryption scheme that was thought to resist attacks based on deliberately
+          causing hardware errors. This paper gives the first such attack on it, showing that carefully induced
+          errors can reveal the secret key, and uses a new variant of the classic "coupon collector" probability
+          problem to count how many errors are needed.</p>
       </li>
     </ol>
 
@@ -105,10 +131,6 @@
       <li>
         <span class="pub-title">Inference for Portfolio Optimization in High Dimensions</span>. With M. Yuan.<br>
         <span class="pub-desc">Asymptotic distribution of the Sharpe ratio in high dimensions, under both the short-sales and no-short-sales regimes.</span>
-      </li>
-      <li>
-        <span class="pub-title">Inference for Linear Causal Models with Hidden Confounding</span>. With M. Yuan.<br>
-        <span class="pub-desc">Tests for hidden confounders and causal effect estimation under identifiability conditions.</span>
       </li>
       <li>
         <span class="pub-title">A Bayesian Predictive Modeling Framework for Bivariate Count Data and Application in Forecasting Soccer Matches</span>. With S. Deb.<br>
