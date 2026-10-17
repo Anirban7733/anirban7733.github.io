@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDIT: full name -->
+  <title>Somak [Last name]</title>
+  <meta name="description" content="Personal academic website of Somak [Last name], Harvard University.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#about">Somak [Last name]</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="files/cv.pdf">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="about">
+    <div class="photo">
+      <!-- EDIT: put your photo at images/profile.jpg, then replace the div below with:
+           <img src="images/profile.jpg" alt="Photo of Somak [Last name]"> -->
+      <div class="photo-placeholder" aria-hidden="true">S</div>
+    </div>
+
+    <div class="bio">
+      <h1>Somak [Last name]</h1>
+      <!-- EDIT: position and department -->
+      <p class="role">[Position], [Department]<br>Harvard University</p>
+
+      <!-- EDIT: bio paragraph -->
+      <p>[One or two paragraphs about your background and research.]</p>
+
+      <p>My research interests include:</p>
+      <ul class="interests">
+        <li>Random matrix theory</li>
+        <li>Random graph theory</li>
+        <li>High-dimensional statistics and probability</li>
+        <li>Inference for large networks</li>
+      </ul>
+
+      <!-- EDIT: links; delete any you don't want -->
+      <p class="links">
+        <a href="mailto:somaklaha@fas.harvard.edu">Email</a>
+        <a href="files/cv.pdf">CV</a>
+        <a href="[Google Scholar URL]">Google Scholar</a>
+        <a href="[arXiv author URL]">arXiv</a>
+        <a href="https://github.com/[username]">GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <section id="publications">
+    <h2>Publications and preprints</h2>
+    <p class="note">* denotes alphabetical / equal-contribution authorship. <!-- EDIT or delete --></p>
+
+    <!-- EDIT: one <li> per paper. Copy the block to add more. -->
+    <ol class="pubs" reversed>
+      <li>
+        <span class="pub-title">[Paper title]</span><br>
+        <span class="pub-authors">[Author A], <strong>Somak [Last name]</strong>, [Author B]</span><br>
+        <span class="pub-venue">[Journal / Conference], [Year]</span>
+        <span class="pub-links">
+          <a href="[arXiv URL]">arXiv</a>
+          <a href="[PDF URL]">pdf</a>
+          <a href="[code URL]">code</a>
+        </span>
+      </li>
+      <li>
+        <span class="pub-title">[Paper title]</span><br>
+        <span class="pub-authors"><strong>Somak [Last name]</strong>, [Author B]</span><br>
+        <span class="pub-venue">Preprint, [Year]</span>
+        <span class="pub-links">
+          <a href="[arXiv URL]">arXiv</a>
+        </span>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ TEACHING ============ -->
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <!-- EDIT: one <li> per course -->
+    <ul class="teaching">
+      <li>
+        <span class="course">Stat 211: [Course title]</span>
+        <span class="term">Teaching Fellow, Harvard University, [Term Year]</span>
+      </li>
+      <li>
+        <span class="course">[Course]</span>
+        <span class="term">[Role], [Institution], [Term Year]</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ CV ============ -->
+  <section id="cv">
+    <h2>CV</h2>
+    <!-- EDIT: put your CV at files/cv.pdf -->
+    <p>My CV is available <a href="files/cv.pdf">here (PDF)</a>. Last updated [Month Year].</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year">2026</span> Somak [Last name]</p>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
