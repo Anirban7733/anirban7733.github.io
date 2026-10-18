@@ -157,7 +157,7 @@ nav a.current { color: var(--accent); }
 /* photo spans exactly from the top of the bio to its last line */
 .home .photo { position: relative; }
 .home .photo img {
-  position: absolute; top: 0; right: 0;
+  position: absolute; top: 0; left: clamp(0px, calc(100% - 14rem), 1.5rem);
   height: 100%; width: 14rem; max-width: 100%; object-fit: cover; object-position: 50% 30%;
 }
 .home .bio p { line-height: 1.75; margin: 0 0 1.25rem; }
