@@ -182,3 +182,7 @@ nav a.current { color: var(--accent); }
 :root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 .header-inner { align-items: center; }
 nav { align-items: center; }
+
+/* Home: justified bio; links row sits below the bio/photo block */
+.home .bio p { text-align: justify; }
+.home #about > .links { margin-top: 1.8rem; }
