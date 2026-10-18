@@ -152,14 +152,13 @@ nav a.current { color: var(--accent); }
 }
 .home #about { padding: 2rem 0 3rem; }
 .home h1 { font-size: 2.8rem; margin-bottom: .4rem; }
-.home .wrap { max-width: 61.5rem; }
-.home .about { grid-template-columns: 1fr 16rem; gap: 2.5rem; align-items: stretch; margin-top: 1.6rem; }
+.home .about { grid-template-columns: minmax(0, 41rem) minmax(12rem, 1fr); gap: 2.5rem; align-items: stretch; margin-top: 1.6rem; }
 .home .bio > :last-child { margin-bottom: 0; }
 /* photo spans exactly from the top of the bio to its last line */
 .home .photo { position: relative; }
 .home .photo img {
   position: absolute; top: 0; right: 0;
-  height: 100%; width: auto; max-width: 100%; object-fit: cover;
+  height: 100%; width: 14rem; max-width: 100%; object-fit: cover; object-position: 50% 30%;
 }
 .home .bio p { line-height: 1.75; margin: 0 0 1.25rem; }
 .home .links { margin-top: 1.8rem; gap: .4rem 1.5rem; }
