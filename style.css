@@ -152,7 +152,8 @@ nav a.current { color: var(--accent); }
 }
 .home #about { padding: 2rem 0 3rem; }
 .home h1 { font-size: 2.8rem; margin-bottom: .4rem; }
-.home .about { grid-template-columns: 1fr 19rem; gap: 4rem; align-items: stretch; margin-top: 1.6rem; }
+.home .wrap { max-width: 61.5rem; }
+.home .about { grid-template-columns: 1fr 16rem; gap: 2.5rem; align-items: stretch; margin-top: 1.6rem; }
 .home .bio > :last-child { margin-bottom: 0; }
 /* photo spans exactly from the top of the bio to its last line */
 .home .photo { position: relative; }
